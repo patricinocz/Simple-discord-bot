@@ -25,9 +25,9 @@ async def tag(ctx, user: discord.Member):   #after !tag @user
 async def on_member_join(member):   #event on member join
     channel = member.guild.system_channel   #same channel as original (discord) welcome message was send
     if channel is not None:
-        welcome_message = f">>> {member.mention} \n **Welcome to the server!**"     #insert your text
-        await channel.send(welcome_message)     #send message on_member_join
+        welcome_message = f">>> {member.mention} \n **Welcome to the server!**"
+        await channel.send(welcome_message)
     
 
 
-client.run('Your server Code') #your original BOT code
+client.run('Your server Code') 
